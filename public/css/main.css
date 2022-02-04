@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&family=Raleway:ital,wght@0,100;0,200;0,300;1,100&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
 *,
 *::after,
 *::before {
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .u-text-align-center {
@@ -256,11 +256,10 @@ header {
 }
 
 .nav-bar__nav-link {
-  font-size: 20px;
+  font-size: 16px;
   display: block;
-  background-color: #005192;
   color: #fff;
-  padding: 1.5em 2em;
+  padding: 1em;
   text-decoration: none;
   background: #020024;
 }
@@ -282,15 +281,6 @@ header {
           justify-content: space-between;
 }
 
-.search-bar__logo-container,
-.search-bar__form-container {
-  padding: 1em;
-}
-
-.search-bar__logo-container {
-  height: 100px;
-}
-
 .search-bar__form-container {
   background-color: #f1f2f3;
   -ms-flex-preferred-size: 100%;
@@ -309,30 +299,30 @@ header {
 
 .search-bar__form-search {
   background-color: #fff;
-  width: 100%;
+  width: 50%;
   border-radius: 10px;
-  margin: 3px;
+  margin: 30px 5px;
   font-size: 20px;
-  height: 50px;
+  height: 30px;
 }
 
 .search-bar__form-submit {
   text-transform: uppercase;
   font-size: 20px;
-  padding: 0px 10px;
+  padding: 0px 5px;
   border-radius: 10px;
   background-color: #005192;
   color: #fff;
+  height: 40%;
+  margin-top: 25px;
 }
 
 .search-bar__form-submit :hover {
-  border: solid #fff;
-  color: red;
+  font-size: 21px;
 }
 
 .search-bar__carrito-container {
   width: 80px;
-  height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 15px;
