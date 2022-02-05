@@ -15,7 +15,6 @@ class ProductoModel {
 
             case 'MONGODB':
                 console.log('**** PERSISTENCIA EN MONGODB (productos) ****')
-                ProductoModelMongoDB.conectarDB()
                 return new ProductoModelMongoDB()
     
             default:
