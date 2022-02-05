@@ -14,7 +14,7 @@ function agregarCarrito(e,id,ref) {
     //console.dir(ref)
 
     //ref.classList.toggle('card--seleccionada')
-    let producto = productoController.productos.find( producto => producto.id == id )
+    let producto = productoController.productos.find( producto => producto._id == id )
     carritoController.agregarAlCarrito(producto)    
 }
 
@@ -26,3 +26,4 @@ async function initInicio() {
 
     document.querySelector('.section-cards__header p').innerHTML = `Se encontraron ${productos.length} productos`
 }
+

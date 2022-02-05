@@ -408,6 +408,23 @@ footer {
   color: #fff;
 }
 
+.access_media {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  border: 1px solid #ffffff15;
+  margin: 0px 5px;
+}
+
 .form-alta {
   display: -webkit-box;
   display: -ms-flexbox;
