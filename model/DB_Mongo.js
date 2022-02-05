@@ -4,6 +4,22 @@ import config from '../config.js'
 class DB_Mongo {
     static conexionOk = false
 
+    static pk = '_id'
+
+    static genIdkey(obj){
+
+        if(Array.isArray(obj)){
+            for(let i=0; i<obj.length;i++){
+                obj[i].id = obj[i][DB_Mongo.pk]
+            }
+
+        }
+        else {
+            obj.id=obj[DB_Mongo.pk]
+        }
+        return obj
+    }
+
     static async conectarDB() {
         try {
             if(!DB_Mongo.conexionOk) { 
