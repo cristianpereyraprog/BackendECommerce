@@ -12,6 +12,31 @@ async function renderPago(preference){
 
     createCheckoutButton(preference.id)
 
+    const items = preference.items
+
+    const refItems = document.querySelector('.item')
+    const refTotal = document.querySelector('#summary-total')
+
+    let total = 0
+    for(let i=0; i<items.length; i++){
+        // title: item.nombre,
+        // unit_price: Number(item.precio),
+        // quantity: Number(item.cantidad),
+        let price = items[i].unit_price
+        let quantity = items[i].quantity
+        let title = items[i].title
+
+        let subtotal = price * quantity
+        total += subtotal
+
+        refItems.innerHTML += `
+        <span class="price" class="summary-price">${subtotal}</span>
+        <p class="item-name">${title} x <span class="summary-quantity">${quantity}</span></p>
+        `
+    }
+    refTotal.innerHTML = total
+
+
     // Go back
         document.getElementById("go-back").addEventListener("click", function() {
         document.querySelector('main').style.display = 'block'
