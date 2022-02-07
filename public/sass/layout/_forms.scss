@@ -8,7 +8,7 @@
     color: #fff;
     font-size: 20px;
 
-    div {
+    div.mensaje-validacion {
         background-color: yellow;
         color: red;
         border: 1px solid red;
@@ -62,3 +62,39 @@
     padding: 5px;
   }
   
+  #drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    width: 300px;
+    margin: 25px 0;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    border-radius: 1px solid #ccc;
+}
+
+#foto {
+    display: none;
+}
+
+#gallery img {
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#drop-area.highlight {
+    border-color: purple;
+}
+
+input.data-validation{
+
+  color: red;
+}
