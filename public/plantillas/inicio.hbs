@@ -7,13 +7,12 @@
             <div class="card__content">
                 <h3 class="card__heading">{{nombre}}</h3>
                 <div class="card__description">
-                    <p>{{detalles}}</p>
+                    <p>{{precio}}</p>
                 </div>
+                <button class="boton__comprar" onclick="agregarCarrito(event,'{{id}}',this)">Agregar al carrrito</button>
             </div>
         </article>
-            <div>
-                <button class="boton__comprar" onclick="agregarCarrito(event,'{{id}}',this)">Comprar!</button>
-            </div>
+
     </div>
     {{/each}}
 {{else}}

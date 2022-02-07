@@ -86,11 +86,35 @@
 .boton__comprar {
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
     font-size: medium;
     padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid #4CAF50;
+    margin-top: 30px;
 }
+
+.boton__comprar:hover{
+    background-color: #4CAF50;
+    color: white;
+    border: solid white;
+}
+
 
 .card__heading{
     text-align: center;
+}
+
+.card__description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card__heading{
+    font-size: 14px;
+    margin-bottom: 4px;
 }
