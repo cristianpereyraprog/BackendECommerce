@@ -1,21 +1,45 @@
 {{#if carrito.length }}
     <button class="btn__enviarCarrito" onclick="carritoController.enviarCarrito()">Enviar</button>
-    <table>
-        <tr>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Marca</th>
-            <th>Foto</th>
-            <th>Cantidad</th>
-            <th>Envio</th>
-            <th>Acción</th>
-        </tr>
-        {{#each carrito}}
+    <table class="table">
+        <thead>
             <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Categoria</th>
+                <th>Detalles</th>
+                <th>Foto</th>
+                <th>Envio</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+
+        {{#each carrito}}
+            <tbody>
+                <tr>
+                    <td data-label="Nombre">{{nombre}}</td>
+                    <td data-label="Precio">{{precio}}</td>
+                    <td data-label="Categoria">{{categoria}}</td>
+                    <td data-label="Detalles">{{detalles}}</td>
+                    <td>
+                        <img style="display:block; margin: 0 auto;" src="{{foto}}" width="100" height="100" alt="{{nombre}}"> 
+                    </td>
+                    {{#if envio}}
+                        <td data-label="Envio">Si</td>
+                    {{else}}
+                        <td data-label="Envio">No</td>
+                    {{/if}}
+                    <td>
+                        <button class="boton__borrar" onclick="carritoController.borrarProductoCarrito('{{id}}')">Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+
+            {{!-- -------------------------------------- --}}
+            {{!-- <tr>
                 <td>{{nombre}}</td>
                 <td>{{precio}}</td>
-                <td>{{marca}}</td>
-                <td>
+                {{!-- <td>{{marca}}</td> --}}
+                {{!-- <td>
                     <img style="display:block; margin: 0 auto;" src="{{foto}}" width="50" alt="{{nombre}}"> 
                 </td>
                 <td>{{cantidad}}</td>
@@ -26,9 +50,9 @@
                     <td>No</td>
                 {{/if}}
                 <td>
-                    <button onclick="carritoController.borrarProductoCarrito('{{id}}')">Borrar</button>
+                    <button class="boton__borrar" onclick="carritoController.borrarProductoCarrito('{{id}}')">Borrar</button>
                 </td>
-            </tr>
+            </tr> --}}
         {{/each}}
     </table>
 {{else}}

@@ -13,6 +13,10 @@
     box-shadow: .3em .3em 10em .3em rgba(0, 0, 0, 1);
     &--visible {
         display: block;
+
+        
+
+
     }
 
     table {
@@ -21,38 +25,91 @@
         
     }
 
-    table,th,td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 5px;
-    }
+    // table,th,td {
+    //     border: 1px solid black;
+    //     border-collapse: collapse;
+    //     padding: 5px;
+    // }
 
-    table button {
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 100px;
-        height: 35px;
-        font-size: 1.1em;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
+    // table button {
+    //     margin-top: 10px;
+    //     margin-left: 10px;
+    //     width: 100px;
+    //     height: 35px;
+    //     font-size: 1.1em;
+    //     font-weight: bold;
+    //     margin-bottom: 15px;
+    // }
 
-    button.btn__enviarCarrito {
-        float: right;
-        margin: 15px;
-        width: 100px;
-        height: 35px;
-        font-size: 1.1em;
-        font-weight: bold;
+    // button.btn__enviarCarrito {
+    //     float: right;
+    //     margin: 15px;
+    //     width: 100px;
+    //     height: 35px;
+    //     font-size: 1.1em;
+    //     font-weight: bold;
+    // }
+    @media (max-width: 768px) {
+        .table thead{
+            display: none;
+        }
+        
+        .table, .table tbody, .table tr, .table td{
+            display: block;
+            width: 100%;
+        }
+        .table tr{
+            margin-bottom:15px;
+        }
+        .table td{
+            text-align: right;
+            padding-left: 50%;
+            text-align: right;
+            position: relative;
+        }
+        .table td::before{
+            content: attr(data-label);
+            position: absolute;
+            left:0;
+            width: 50%;
+            padding-left:15px;
+            font-size:15px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        // .section-carrito--visible {
+        //     right: 0;
+        //     left: 0;
+        // }
     }
 
 }
 
 
 .section-carrito--visible {
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: #d1e1f0;
     padding: 20px;
     margin: 20px;
+    right: 0;
+    left: 0;
 }
 
+.btn__enviarCarrito {
+    background-color: #ddf2e1;
+    color: #4eb060;
+    border: none;
+    font-size: medium;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn__enviarCarrito:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: solid white;
+}

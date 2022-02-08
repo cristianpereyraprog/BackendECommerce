@@ -102,25 +102,6 @@ header {
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
-  .card {
-    min-width: 100%;
-    height: 200px;
-  }
-  .card__article {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .card__image {
-    width: 40%;
-  }
-  .card__content {
-    top: 0;
-    padding-left: 45%;
-  }
-}
-
 #cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,36 +194,60 @@ header {
   margin: 10px auto;
 }
 
-.section-carrito table, .section-carrito th, .section-carrito td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 5px;
-}
-
-.section-carrito table button {
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 100px;
-  height: 35px;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.section-carrito button.btn__enviarCarrito {
-  float: right;
-  margin: 15px;
-  width: 100px;
-  height: 35px;
-  font-size: 1.1em;
-  font-weight: bold;
+@media (max-width: 768px) {
+  .section-carrito .table thead {
+    display: none;
+  }
+  .section-carrito .table, .section-carrito .table tbody, .section-carrito .table tr, .section-carrito .table td {
+    display: block;
+    width: 100%;
+  }
+  .section-carrito .table tr {
+    margin-bottom: 15px;
+  }
+  .section-carrito .table td {
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .section-carrito .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
 }
 
 .section-carrito--visible {
-  border-radius: 10%;
+  border-radius: 10px;
   background-color: #d1e1f0;
   padding: 20px;
   margin: 20px;
+  right: 0;
+  left: 0;
+}
+
+.btn__enviarCarrito {
+  background-color: #ddf2e1;
+  color: #4eb060;
+  border: none;
+  font-size: medium;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn__enviarCarrito:hover {
+  background-color: #4CAF50;
+  color: white;
+  border: solid white;
 }
 
 .payment-form {
@@ -577,6 +582,10 @@ h1 {
 .search-bar__logo-container {
   margin-left: 30px;
   margin-top: 10px;
+}
+
+.main__logo {
+  width: 158%;
 }
 
 footer {
