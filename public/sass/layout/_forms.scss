@@ -2,20 +2,31 @@
     display: flex;
     flex-direction: column;
     background-color: #005092d0;
-    margin: 10px 10% ;
+    margin: 10px 21% ;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
     font-size: 20px;
+  //   background: rgb(0,80,146);
+  // background: linear-gradient(180deg, rgba(0,80,146,1) 30%, rgba(205,205,205,1) 89%);
 
     div.mensaje-validacion {
         background-color: yellow;
         color: red;
         border: 1px solid red;
-        margin: 2px 0px 10px 0;
+        margin: auto;
+        margin-bottom: 10px;
         border-radius: 1px;
         display: none;
     }
+
+    // button {
+    //   margin: 15px 50px;
+    //   padding: 10px;
+    //   color: #4eb060;
+    //   background-color: #ddf2e1;
+    //   border-radius: 2px;
+    // }
 }
 
 #nombre_producto,
@@ -25,8 +36,11 @@
 #detalle_producto,
 #envio_producto,
 #nombre_categoria {
-    margin: 10px;
-    font-size: 16px;
+  margin: 10px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  padding: 5px 10px;
 } 
 
 .submit {
@@ -65,8 +79,8 @@
   #drop-area {
     border: 2px dashed #ccc;
     border-radius: 20px;
-    width: 300px;
-    margin: 25px 0;
+    width: 62%;
+    margin: auto;
     padding: 20px;
 }
 
@@ -148,4 +162,35 @@ input.data-validation{
     font-weight: bold;
     text-align: left;
   }
+}
+
+.boton__borrar {
+  background-color: #f44336;
+  border: solid 0.5px #fff;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.boton__borrar:hover {
+  color: #f44336;
+  background-color: #fff;
+}
+
+tr {
+background-color: #005092d0;
+color: #fff;
+border-radius: 10px;
+// background: rgb(0,80,146);
+// background: linear-gradient(180deg, rgba(0,80,146,1) 30%, rgba(205,205,205,1) 89%);
+}
+
+.form_campo {
+  margin: auto;
+}
+
+#progress-bar {
+  width: 100%;
 }

@@ -33,11 +33,11 @@
                     {{/if}}
                     <td>
                         {{#if ../validos}}
-                            <button onclick="productoController.actualizarProducto('{{id}}')">Actualizar</button>
+                            <button class="boton__comprar" onclick="productoController.actualizarProducto('{{id}}')">Actualizar</button>
                         {{else}}
                             <button disabled onclick="productoController.actualizarProducto('{{id}}')">Actualizar</button>
                         {{/if}}
-                        <button onclick="productoController.borrarProducto('{{id}}')">Borrar</button>
+                        <button class="boton__borrar" onclick="productoController.borrarProducto('{{id}}')">Borrar</button>
                     </td>
                 </tr>
             </tbody>
