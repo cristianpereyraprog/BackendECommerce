@@ -1,15 +1,9 @@
 //********************************************************
 // CONTACTO***********************************************
-
-.contact-header h1 {
-    padding: 0 14px 14px 14px;
-    border-bottom: double #005192 5px;
-    text-align: center;
-}
 .contact-header h2 {
-    padding: 0 14px 14px 14px;
-    border-bottom: double #005192 5px;
     text-align: center;
+    color: #fff;
+    padding: 2%;
 }
 
 
@@ -22,6 +16,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
 }
 .info-contact__form-contact p,
 .info-contact__form-contact span {

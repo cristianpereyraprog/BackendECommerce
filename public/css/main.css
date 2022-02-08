@@ -819,16 +819,10 @@ tr {
   font-size: 30px;
 }
 
-.contact-header h1 {
-  padding: 0 14px 14px 14px;
-  border-bottom: double #005192 5px;
-  text-align: center;
-}
-
 .contact-header h2 {
-  padding: 0 14px 14px 14px;
-  border-bottom: double #005192 5px;
   text-align: center;
+  color: #fff;
+  padding: 2%;
 }
 
 .info-contact__form-contact {
@@ -845,6 +839,7 @@ tr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 10px;
 }
 
 .info-contact__form-contact p,
@@ -938,7 +933,7 @@ tr {
   padding-top: 25px;
 }
 
-.main-form__form-alta {
+.main-form__form {
   background: #675f5f;
   background: -webkit-gradient(linear, left top, left bottom, from(#675f5f), color-stop(48%, #cdcdcd));
   background: linear-gradient(180deg, #675f5f 0%, #cdcdcd 48%);
@@ -947,6 +942,7 @@ tr {
 .form-alta__title {
   text-align: center;
   padding: 2%;
+  color: #fff;
 }
 
 #listado-productos {
