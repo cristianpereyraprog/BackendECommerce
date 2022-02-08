@@ -1,16 +1,20 @@
 footer {
     text-align: right;
-    background-color: #005092d0;
+    // background-color: #d1e1f0;
     font-size:21px;
     padding: 7px;
-    color: #fff;
+    // color: #fff;
+    background: rgb(103,95,95);
+    background: linear-gradient(180deg, rgba(103,95,95,1) 48%, rgba(205,205,205,1) 100%);
 }
 
 .access_media {
     display: flex;
-
+    justify-content: center;
 }
 .access_media-logo{
-    color: #fff;
+    color: #005092d0;
     margin: 10px;
+    margin-bottom: 0px;
+    height: auto;
 }

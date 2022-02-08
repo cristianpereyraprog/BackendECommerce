@@ -1,3 +1,4 @@
+
 {{#if listado.length }}
     {{#each listado}}
     <div class="card" >
@@ -7,7 +8,7 @@
             <div class="card__content">
                 <h3 class="card__heading">{{nombre}}</h3>
                 <div class="card__description">
-                    <p>{{precio}}</p>
+                    <p>$ {{precio}}</p>
                 </div>
                 <button class="boton__comprar" onclick="agregarCarrito(event,'{{id}}',this)">Agregar al carrrito</button>
             </div>

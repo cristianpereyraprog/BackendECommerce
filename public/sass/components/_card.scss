@@ -17,6 +17,7 @@
     -webkit-transition: all .2s;
     transition: all .2s;
     margin: 20px;
+    background-color:#f7f7f7;
     
     &:hover,
     &:focus {
@@ -93,8 +94,11 @@
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
-    border: solid #4CAF50;
+    // border: solid #4CAF50;
+    border: none;
     margin-top: 30px;
+    background-color: #ddf2e1;
+    color: #4eb060;
 }
 
 .boton__comprar:hover{
@@ -112,9 +116,12 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card__heading{
-    font-size: 14px;
     margin-bottom: 4px;
 }

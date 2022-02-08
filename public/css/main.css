@@ -58,6 +58,7 @@ header {
   -webkit-transition: all .2s;
   transition: all .2s;
   margin: 20px;
+  background-color: #f7f7f7;
 }
 
 .card:hover, .card:focus {
@@ -151,8 +152,10 @@ header {
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
-  border: solid #4CAF50;
+  border: none;
   margin-top: 30px;
+  background-color: #ddf2e1;
+  color: #4eb060;
 }
 
 .boton__comprar:hover {
@@ -173,10 +176,13 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-top: 20px;
+  font-size: large;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card__heading {
-  font-size: 14px;
   margin-bottom: 4px;
 }
 
@@ -189,7 +195,6 @@ header {
   overflow-y: auto;
   display: none;
   position: fixed;
-  background-color: #f1f2f3;
   z-index: 1;
   top: 150px;
   left: 150px;
@@ -231,6 +236,13 @@ header {
   height: 35px;
   font-size: 1.1em;
   font-weight: bold;
+}
+
+.section-carrito--visible {
+  border-radius: 10%;
+  background-color: #d1e1f0;
+  padding: 20px;
+  margin: 20px;
 }
 
 .payment-form {
@@ -371,6 +383,9 @@ header {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  background: #675f5f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#675f5f), color-stop(48%, #cdcdcd));
+  background: linear-gradient(180deg, #675f5f 0%, #cdcdcd 48%);
 }
 
 #menu {
@@ -381,15 +396,11 @@ header {
   display: block;
 }
 
-#menu:checked ~ .search-bar .menu-toggle__label {
-  background-color: #f1f2f3;
-}
-
 /*********************************
             NAV BAR
 *********************************/
 .nav-bar {
-  margin-bottom: 25px;
+  margin-bottom: 3px;
 }
 
 .nav-bar__nav-list {
@@ -397,8 +408,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+  letter-spacing: 2px;
 }
 
 .nav-bar__nav-item {
@@ -415,25 +429,24 @@ header {
 }
 
 .nav-bar__nav-item :hover {
-  background-color: #005092d0;
-  color: #fff;
+  text-decoration: underline;
+  border-radius: 0%;
 }
 
 /*********************************
             SEARCH BAR
 *********************************/
 .search-bar {
-  background-color: #f1f2f3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 68px;
 }
 
 .search-bar__form-container {
-  background-color: #f1f2f3;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   display: -webkit-box;
@@ -453,18 +466,22 @@ header {
   width: 50%;
   border-radius: 10px;
   margin: 30px 5px;
-  font-size: 20px;
+  font-size: 16px;
   height: 30px;
+  padding: 12px;
+  border: none;
 }
 
 .search-bar__form-submit {
-  font-size: 20px;
-  padding: 0px 5px;
+  font-size: 19px;
+  padding: 6px 7px;
   border-radius: 10px;
   background-color: #005192;
   color: #fff;
-  height: 40%;
-  margin-top: 25px;
+  height: 47%;
+  margin-top: 29px;
+  cursor: pointer;
+  border: none;
 }
 
 .search-bar__form-submit :hover {
@@ -475,8 +492,10 @@ header {
   width: 80px;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 15px;
+  margin-top: 28px;
   margin-right: 15px;
+  margin-right: 30px;
+  cursor: pointer;
 }
 
 img {
@@ -555,27 +574,34 @@ h1 {
   text-align: center;
 }
 
-body, main {
-  background-color: #f1f2f3;
+.search-bar__logo-container {
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 footer {
   text-align: right;
-  background-color: #005092d0;
   font-size: 21px;
   padding: 7px;
-  color: #fff;
+  background: #675f5f;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(48%, #675f5f), to(#cdcdcd));
+  background: linear-gradient(180deg, #675f5f 48%, #cdcdcd 100%);
 }
 
 .access_media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .access_media-logo {
-  color: #fff;
+  color: #005092d0;
   margin: 10px;
+  margin-bottom: 0px;
+  height: auto;
 }
 
 .form-alta {
@@ -587,7 +613,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #005092d0;
-  margin: 30px 10%;
+  margin: 10px 10%;
   padding: 10px;
   border-radius: 10px;
   color: #fff;
@@ -646,10 +672,6 @@ footer {
   width: 100%;
 }
 
-#listado-productos th, #listado-productos td {
-  padding: 5px;
-}
-
 #drop-area {
   border: 2px dashed #ccc;
   border-radius: 20px;
@@ -686,9 +708,58 @@ input.data-validation {
   color: black;
 }
 
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td, .table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.table th {
+  background-color: darkblue;
+  color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
 .section-cards {
-  background-color: #f1f2f3;
-  padding: 1em;
+  background-color: #cdcdcd;
   padding-top: 0px;
 }
 
@@ -834,7 +905,29 @@ input.data-validation {
   padding-top: 25px;
 }
 
+.main-form__form-alta {
+  background: #675f5f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#675f5f), color-stop(48%, #cdcdcd));
+  background: linear-gradient(180deg, #675f5f 0%, #cdcdcd 48%);
+}
+
+.form-alta__title {
+  text-align: center;
+  padding: 2%;
+}
+
+#listado-productos {
+  margin-left: 7%;
+  margin-bottom: 30px;
+  background-color: aqua;
+}
+
+body {
+  background-color: #cdcdcd;
+  z-index: -1;
+}
+
 .active {
-  background-color: #005092d0;
-  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
 }

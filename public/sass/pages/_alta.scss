@@ -1,0 +1,21 @@
+.main-form__form-alta {
+    // background-color: #cdcdcd;
+    background: rgb(103,95,95);
+    background: linear-gradient(180deg, rgba(103,95,95,1) 0%, rgba(205,205,205,1) 48%);
+}
+
+.form-alta__title {
+    text-align: center;
+    padding: 2%;
+}
+
+#listado-productos {
+    margin-left: 7%;
+    margin-bottom: 30px;
+    background-color: aqua;
+}
+
+body{
+    background-color: #cdcdcd;
+    z-index: -1;
+}

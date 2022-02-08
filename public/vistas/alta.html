@@ -1,61 +1,62 @@
-<main>
-        <h2>Ingresá nuevos productos para tus clientes</h2>
 
-        <!-- FORMULARIO-->
-        <form id="form-alta" autocomplete="off" class="form-alta">
+<div class="main-form__form-alta">
+    <h2 class="form-alta__title">Ingresá nuevos productos para tus clientes</h2>
 
-            <!-- Campo Nombre -->
-            <label for="nombre">Nombre:</label>
-            <input id="nombre_producto" class="data-validation"   name="nombre">
-            <div class="mensaje-validacion"></div>
-        
-            <!-- Campo Precio -->
-            <label for="precio">Precio:</label>
-            <input type="text"class="data-validation" id="precio_producto" name="precio">
-            <div class="mensaje-validacion"></div>
-        
-            <!-- Campo Stock -->
-            <label for="stock">Stock:</label>
-            <input type="text" class="data-validation" id="stock_producto" name="stock">
-            <div class="mensaje-validacion"></div>
+    <!-- FORMULARIO-->
+    <form id="form-alta" autocomplete="off" class="form-alta">
 
-            <!-- Campo Foto
-            <label for="foto">Foto:</label>
-            <input type="text" id="foto_producto" name="foto">
-            <div></div> -->
-
-            <div id="drop-area">
-                <p>Subir imágen al servidor con <b>file dialog</b> ó con <b>drag and drop</b> dentro del área punteada</p>
-                <br>
+        <!-- Campo Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input id="nombre_producto" class="data-validation"   name="nombre">
+        <div class="mensaje-validacion"></div>
     
-                <input id="foto" type="file" accept="image/*" onchange='formularioAlta.handleFiles(this.files)'>
-                <label class="button" for="foto">File dialog</label>
-                <br><br>
+        <!-- Campo Precio -->
+        <label for="precio">Precio:</label>
+        <input type="text"class="data-validation" id="precio_producto" name="precio">
+        <div class="mensaje-validacion"></div>
     
-                <progress id="progress-bar" max="100" value="0"></progress>
-                <div id="gallery"><img src="" alt=""></div>
-            </div>
+        <!-- Campo Stock -->
+        <label for="stock">Stock:</label>
+        <input type="text" class="data-validation" id="stock_producto" name="stock">
+        <div class="mensaje-validacion"></div>
 
-            <!-- Campo Categoria -->
-            <label for="categoria">Categoría:</label>
-            <input type="text" class="data-validation" id="nombre_categoria" name="categoria" >
-            <div class="mensaje-validacion"></div>
+        <!-- Campo Foto
+        <label for="foto">Foto:</label>
+        <input type="text" id="foto_producto" name="foto">
+        <div></div> -->
 
-            <!-- Campo Detalle -->
-            <label for="detalle">Detalle:</label>
-            <input type="text" class="data-validation" id="detalle_producto" name="detalle">
-            <div class="mensaje-validacion"></div>
+        <div id="drop-area">
+            <p>Subir imágen al servidor con <b>file dialog</b> ó con <b>drag and drop</b> dentro del área punteada</p>
+            <br>
 
-            <!-- Campo Envio -->
-            <input type="checkbox" class="data-validation" id="envio_producto" name="envio">
-            <label for="envio">Envío sin cargo</label>
+            <input id="foto" type="file" accept="image/*" onchange='formularioAlta.handleFiles(this.files)'>
+            <label class="button" for="foto">File dialog</label>
+            <br><br>
+
+            <progress id="progress-bar" max="100" value="0"></progress>
+            <div id="gallery"><img src="" alt=""></div>
+        </div>
+
+        <!-- Campo Categoria -->
+        <label for="categoria">Categoría:</label>
+        <input type="text" class="data-validation" id="nombre_categoria" name="categoria" >
+        <div class="mensaje-validacion"></div>
+
+        <!-- Campo Detalle -->
+        <label for="detalle">Detalle:</label>
+        <input type="text" class="data-validation" id="detalle_producto" name="detalle">
+        <div class="mensaje-validacion"></div>
+
+        <!-- Campo Envio -->
+        <input type="checkbox" class="data-validation" id="envio_producto" name="envio">
+        <label for="envio">Envío sin cargo</label>
 
 
+
+        <button> Dar de alta</button>
+        <!-- <button class="submit" type="reset" value="Restablecer el formulario">Restablecer el formulario </button> -->
     
-            <button> Dar de alta</button>
-            <!-- <button class="submit" type="reset" value="Restablecer el formulario">Restablecer el formulario </button> -->
-        
-        </form>
-        <h1>Listado Productos</h1>
-        <div id="listado-productos"></div>
-    </main>
+    </form>
+    <h2 class="form-alta__title">Listado Productos</h2>
+    <div id="listado-productos"></div>
+</div>
